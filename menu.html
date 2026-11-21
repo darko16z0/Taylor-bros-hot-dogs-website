@@ -4,14 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu | Taylor Brothers Hot Dog Stand</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
-      <a href="menu.html">Menu</a> |
-      <a href="contact.html">Contact</a>
+  <header class="site-header">
+    <nav class="site-nav">
+      <a class="nav-logo" href="index.html">Taylor Brothers</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
   <main>
@@ -22,78 +31,87 @@
     <!-- Hot dogs -->
     <section>
       <h2>Hot dogs</h2>
-      <article>
+      <div class="card-grid">
+      <article class="card">
         <h3>Hot dog with everything</h3>
         <p>Mustard, relish, onions and chili. $3.25</p>
       </article>
+      </div>
     </section>
 
     <!-- Cold drinks -->
     <section>
       <h2>Cold drinks</h2>
-      <article>
+      <div class="card-grid">
+      <article class="card">
         <h3>Pepsi</h3>
         <p>Cold fountain soda. $2.10 for medium, $2.60 for large.</p>
       </article>
-      <article>
+      <article class="card">
         <h3>Diet Pepsi</h3>
         <p>Cold fountain soda. $2.10 for medium, $2.60 for large.</p>
       </article>
-      <article>
+      <article class="card">
         <h3>Starry</h3>
         <p>Lemon-lime soda. $2.10 for medium, $2.60 for large.</p>
       </article>
-      <article>
+      <article class="card">
         <h3>Mug Root Beer</h3>
         <p>Root beer. $2.10 for medium, $2.60 for large.</p>
       </article>
-      <article>
+      <article class="card">
         <h3>Dr Pepper</h3>
         <p>Cold fountain soda. $2.10 for medium, $2.60 for large.</p>
       </article>
-      <article>
+      <article class="card">
         <h3>Iced tea</h3>
         <p>Cold iced tea. $2.10 for medium, $2.60 for large.</p>
       </article>
-      <article>
+      <article class="card">
         <h3>Tropicana lemonade</h3>
         <p>Cold lemonade. $2.10 for medium, $2.60 for large.</p>
       </article>
+      </div>
     </section>
 
     <!-- Hot drinks and milk -->
     <section>
       <h2>Hot drinks and milk</h2>
-      <article>
+      <div class="card-grid card-grid-3">
+      <article class="card">
         <h3>Coffee</h3>
         <p>$1.00</p>
       </article>
-      <article>
+      <article class="card">
         <h3>Hot chocolate</h3>
         <p>$2.60</p>
       </article>
-      <article>
+      <article class="card">
         <h3>Milk</h3>
         <p>$2.60</p>
       </article>
+      </div>
     </section>
 
     <!-- Snacks -->
     <section>
       <h2>Snacks</h2>
-      <article>
+      <div class="card-grid">
+      <article class="card">
         <h3>Chips</h3>
         <p>$1.35</p>
       </article>
-      <article>
+      <article class="card">
         <h3>Candy and gum</h3>
         <p>$1.75</p>
       </article>
+      </div>
     </section>
 
-    <p><a href="tel:+15597322781">Order Now: call (559) 732-2781</a> (call in a takeout order or use the walk-up window)</p>
+    <p><a class="btn btn-primary" href="tel:+15597322781">Order Now: call (559) 732-2781</a></p>
+    <p class="small-text">Call in a takeout order or use the walk-up window.</p>
   </main>
-  <footer>
+  <footer class="site-footer">
     <p>Taylor Brothers Hot Dog Stand, 206 N Encina St, Visalia, CA 93291</p>
     <p><a href="https://www.facebook.com/Taylordogs1952/">Facebook</a></p>
     <p>Student redesign project by Edward Contreras</p>

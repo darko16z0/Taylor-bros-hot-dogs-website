@@ -4,62 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taylor Brothers Hot Dog Stand | Chili Dogs Since 1952 in Visalia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
-      <a href="menu.html">Menu</a> |
-      <a href="contact.html">Contact</a>
+  <header class="site-header">
+    <nav class="site-nav">
+      <a class="nav-logo" href="index.html">Taylor Brothers</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
   <main>
     <!-- Hero -->
-    <section>
-      <h1>Taylor Brothers Hot Dog Stand</h1>
-      <p>Chili Dogs Since 1952</p>
-      <img src="images/stand-neon-sign.jpg" alt="The Taylor Brothers stand in downtown Visalia at night with its neon sign lit up">
-      <p>A family-run walk-up stand in downtown Visalia with a short menu, a homemade chili recipe and low prices. Three generations of the Taylor family have kept it going.</p>
-      <p><a href="tel:+15597322781">Order Now: call (559) 732-2781</a> (call in a takeout order or use the walk-up window)</p>
-      <p><a href="menu.html">See the Menu</a></p>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Taylor Brothers Hot Dog Stand</h1>
+        <p class="tagline">Chili Dogs Since 1952</p>
+        <p>A family-run walk-up stand in downtown Visalia with a short menu, a homemade chili recipe and low prices. Three generations of the Taylor family have kept it going.</p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="tel:+15597322781">Order Now: call (559) 732-2781</a>
+          <a class="btn btn-secondary" href="menu.html">See the Menu</a>
+        </div>
+        <p class="hero-note">Call in a takeout order or use the walk-up window.</p>
+      </div>
+      <div class="hero-image">
+        <img src="images/stand-neon-sign.jpg" alt="The Taylor Brothers stand in downtown Visalia at night with its neon sign lit up">
+      </div>
     </section>
 
     <!-- Why people love it -->
     <section>
       <h2>Why people love it</h2>
-      <article>
+      <div class="card-grid card-grid-3">
+      <article class="card">
         <h3>Family chili recipe</h3>
         <p>The chili is homemade from a family recipe and goes on every chili dog.</p>
       </article>
-      <article>
+      <article class="card">
         <h3>Low prices</h3>
         <p>The menu stays simple so the prices can stay low.</p>
       </article>
-      <article>
+      <article class="card">
         <h3>70+ years of history</h3>
         <p>The stand has served Visalia since 1952, and the same neon sign still lights it up.</p>
       </article>
+      </div>
     </section>
 
     <!-- Featured items -->
     <section>
       <h2>Featured items</h2>
-      <article>
+      <div class="card-grid card-grid-3">
+      <article class="card">
         <h3>Hot dog with everything</h3>
         <img src="images/chili-dog.jpg" alt="A hot dog covered in homemade chili in a bun on wax paper">
         <p>Mustard, relish, onions and homemade chili for $3.25.</p>
       </article>
-      <article>
+      <article class="card">
         <h3>Cold drinks</h3>
         <img src="images/cold-drinks.jpg" alt="A can of Pepsi and a can of Diet Pepsi">
         <p>Pepsi, Dr Pepper, Starry, Mug Root Beer, iced tea and lemonade.</p>
       </article>
-      <article>
+      <article class="card">
         <h3>Chips</h3>
         <img src="images/chips.jpg" alt="A bag of Lay's Classic potato chips">
         <p>A bag of chips to go with your hot dog for $1.35.</p>
       </article>
+      </div>
     </section>
 
     <!-- Hours and location -->
@@ -68,10 +88,13 @@
       <p>206 N Encina St, Visalia, CA 93291</p>
       <p>Monday to Saturday: 10:00 AM to 10:00 PM<br>Sunday: Closed</p>
       <p>Walk-up window only, no indoor seating.</p>
-      <p><a href="contact.html">Find us</a> | <a href="https://www.google.com/maps/dir/?api=1&destination=206+N+Encina+St,+Visalia,+CA+93291">Get directions</a></p>
+      <div class="button-row">
+        <a class="btn btn-secondary" href="contact.html">Find us</a>
+        <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=206+N+Encina+St,+Visalia,+CA+93291">Get directions</a>
+      </div>
     </section>
   </main>
-  <footer>
+  <footer class="site-footer">
     <p>Taylor Brothers Hot Dog Stand, 206 N Encina St, Visalia, CA 93291</p>
     <p><a href="https://www.facebook.com/Taylordogs1952/">Facebook</a></p>
     <p>Student redesign project by Edward Contreras</p>

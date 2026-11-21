@@ -4,14 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Story | Taylor Brothers Hot Dog Stand</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
-      <a href="menu.html">Menu</a> |
-      <a href="contact.html">Contact</a>
+  <header class="site-header">
+    <nav class="site-nav">
+      <a class="nav-logo" href="index.html">Taylor Brothers</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
   <main>
@@ -39,13 +48,13 @@
     <!-- What makes it special -->
     <section>
       <h2>What makes it special</h2>
-      <ul>
+      <ul class="feature-list">
         <li>Homemade chili from a secret family recipe</li>
         <li>Flavorful onions on every chili dog</li>
         <li>A short menu and low prices</li>
         <li>The same old-school feel and neon sign for decades</li>
       </ul>
-      <img src="images/hot-dogs-drive-in-logo.png" alt="Hot Dogs Drive In logo with a spotted dog above the words">
+      <img class="about-logo" src="images/hot-dogs-drive-in-logo.png" alt="Hot Dogs Drive In logo with a spotted dog above the words">
     </section>
 
     <!-- Timeline -->
@@ -56,10 +65,13 @@
         <li>1988: The stand moves to 206 N Encina St</li>
         <li>Today: Third-generation owner Matthew Taylor runs it</li>
       </ul>
-      <p><a href="menu.html">See the Menu</a> | <a href="contact.html">Find Us</a></p>
+      <div class="button-row">
+        <a class="btn btn-primary" href="menu.html">See the Menu</a>
+        <a class="btn btn-secondary" href="contact.html">Find Us</a>
+      </div>
     </section>
   </main>
-  <footer>
+  <footer class="site-footer">
     <p>Taylor Brothers Hot Dog Stand, 206 N Encina St, Visalia, CA 93291</p>
     <p><a href="https://www.facebook.com/Taylordogs1952/">Facebook</a></p>
     <p>Student redesign project by Edward Contreras</p>
